@@ -1,6 +1,6 @@
 import psycopg2
 from ETL import df_forn
-from conexão import conexao
+from conexao import conexao
 
 def executar_sql():
     cur = conexao.cursor()

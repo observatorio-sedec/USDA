@@ -1,10 +1,9 @@
 import datetime
-import openpyxl
 import requests as rq
 import pandas as pd
 from pathlib import Path
 from dicionarios import country_dict, commodity_dict, unidades_descricoes, name_attribute
-from ajustar_planilha import ajustar_bordas, ajustar_colunas
+# from ajustar_planilha import ajustar_bordas, ajustar_colunas
 ROOT_PATH = Path(__file__).parent
 
 lista_paises = ['AF','AL','AG','AO','AC','AR','AM','AS','AU','AJ','BF','BA','BG','BB','BO','S8','BE','BH','DM','BD','BT','BL','BK','BC','BR','BX','BU','UV','BM',
