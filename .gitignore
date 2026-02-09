@@ -2,3 +2,4 @@ conexao.py
 credencials.json
 api_key.py
 .env
+.env.prod

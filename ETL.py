@@ -3,6 +3,7 @@ import requests as rq
 import pandas as pd
 from pathlib import Path
 from dicionarios import country_dict, commodity_dict, unidades_descricoes, name_attribute
+import polars as pl
 # from ajustar_planilha import ajustar_bordas, ajustar_colunas
 ROOT_PATH = Path(__file__).parent
 
@@ -74,7 +75,7 @@ def tratando_dados_forn(dados_brutos):
     
 def gerando_dataframe(dados_limpos, df, ajust):
     if df is None:
-        df = pd.DataFrame(dados_limpos)
+        df = pl.DataFrame(dados_limpos)
         if df.empty:
             return df
         if ajust == 1:
